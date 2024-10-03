@@ -1,44 +1,25 @@
-// these are global variables
-string name = "Bob" // name is a type of string
-int age = 24 // age is a type of integer
-int expression = 2 + 2 * (4 - 1)  // expression
-int a = 2
-int b = 3
+a = 2
+b = 3
 
-func addition (int a, int b) {
-    int c = 21 // local variable
-    int result = a + b + c // c and result are local variables of the function addition
-    return result
+def sum(a, b) {
+    c = a + b 
+    return c
 }
 
-int result = addition(a, b) // passing in existing variables and store the result in a result variable
+result = sum(a, b)
 print(result)
 
-print(addition(4, 1)) // or we can pass in the values as arguments and print it straight from the print function
-print("Your name is" + age + "and you are" + age "year old")
+if a > b {
+    print("a is greater than b")
+} else {
+    print("b is greater than a")
+}
 
-
-// syntax of a for loop
-for (int i in range(10)) {
+for i in range of (10) {
     print(i)
 }
 
-// syntax for while loop
-while (a != 10) {
-    print(a)
-    a -- // or  a -= 1 or a = a - 1
-}
-
-// syntax for if else statements
-
-if () {
-    if () {
-
-    } 
-    else {
-
-    }
-}
-else {
-
+while i < 10 {
+    print(i)
+    i += 1
 }
